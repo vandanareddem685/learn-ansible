@@ -11,5 +11,7 @@
     private: false
   tasks:
   - name: print course
+    vars:
+      course: ansible from task
     debug:
       msg: "course is {{ course }}"
