@@ -1,5 +1,5 @@
 - name: demo on ping
-  hosts: localhost
+  hosts: local
   connection: local
   tasks:
   - name: ping the hosts
