@@ -1,0 +1,14 @@
+- name: print the variables
+  hosts: local
+  connection: local
+  vars:
+    property: "100acres"
+  tasks:
+  - name: print the vars
+    debug:
+      msg: "Hi, i got the {{property}} from my father"
+  - name: print the vars again
+    vars:
+      property: "10acres"
+    debug:
+      msg: "Hi, i got the {{property}} "
