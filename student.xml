@@ -1,0 +1,17 @@
+<student>
+    <firstName>Vandana</firstName>
+    <lastName>Reddem</lastName>
+    <dob>01-01-01</dob>
+    <addresses>
+        <address type = "temporary">
+            <doorNO>10-2-51</doorNO>
+            <streetName>Gandhi nagar</streetName>
+            <city>Hyderabad</city>
+        </address>
+        <address type = "permenant">
+            <doorNO>10-2-51</doorNO>
+            <streetName>Gandhi nagar</streetName>
+            <city>Hyderabad</city>
+        </address>
+    </addresses>
+</student>

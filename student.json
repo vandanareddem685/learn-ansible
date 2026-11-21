@@ -1,0 +1,25 @@
+{
+    "firstname":"Vandana",
+    "lastName":"Reddem",
+    "DOB":01-01-01,
+    "addresses":[
+        {
+            "type":"permenant",
+            "doorNo":"10-2-51",
+            "street":"gandhinagar",
+            "city":"Hyderabad"
+        },
+        {
+            "type":"temporary",
+            "doorNo":"10-2-51",
+            "street":"gandhinagar",
+            "city":"Hyderabad"
+        }
+    
+    ],  
+    "Skills" :{
+        "Os":"Linux",
+        "IDE":"Vscode",
+        "CM":"ansible"
+    }
+}

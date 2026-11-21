@@ -1,0 +1,16 @@
+- firstName: "Vandana"
+  lastName: "Reddem"
+  dob : 01-01-01
+  address:
+  - type: permenant
+    doorNo: 10-2-51
+    street: Gandhinagar
+    city: Hyderabad
+  - type: temporary
+    doorNo: 10-2-51
+    street: Galigangalamma templae street
+    city: Pithapuram
+  skills:
+    os: Linux
+    IDE: vscode
+    CM: ansible
