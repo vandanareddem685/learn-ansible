@@ -5,11 +5,21 @@
   # - name: print the name
   #   debug:
   #     msg: "Hi,{{ person_name | default('Ramesh') }}"
-  vars:
-    topics: "Linux, shell, ansible, terraform, docker"
+  # vars:
+  #   topics: "Linux, shell, ansible, terraform, docker"
 
-  tasks:
-  - name: convert string into list
-    debug:
-      msg: "topics are: {{ topics | split(',')}}"
+  # tasks:
+  # - name: convert string into list
+  #   debug:
+  #     msg: "topics are: {{ topics | split(',')}}"
   
+  vars: 
+   names:
+   - Sivakumar
+   - Reddy
+   - Mettukuru
+  
+  tasks:
+  - name: convert list to string
+    debug:
+      msg: "Fullname is: {{ names | join(' ')}}"
