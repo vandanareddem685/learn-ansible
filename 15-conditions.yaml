@@ -1,6 +1,7 @@
 - name: print the Os
   hosts: local
   connection: local
+  become: yes
   tasks:
   # - name: print the Os
   #   debug:
