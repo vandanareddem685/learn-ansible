@@ -28,9 +28,16 @@
   #   debug:
   #     msg: "Fullname is: {{ names | join(' ')}}"
 
+  # vars:
+  #  topic: ANSIBLE
+  # tasks:
+  # - name: convert to lower
+  #   debug:
+  #     msg: "Tpic is: {{ topic | lower }}"
+
   vars:
    topic: ansible
   tasks:
-  - name: convert to lower
+  - name: convert to upper
     debug:
-      msg: "Tpic is: {{ topic | lower }}"
+      msg: "Tpic is: {{ topic | upper }}"
