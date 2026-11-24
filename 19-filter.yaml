@@ -11,5 +11,5 @@
   tasks:
   - name: convert string into list
     debug:
-      msg: "topics are: {{ topics | split(',')}}
+      msg: "topics are: {{ topics | split(',')}}"
   
