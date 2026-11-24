@@ -4,10 +4,23 @@
   tasks:
   - name: print the Os
     debug:
-      msg: "Os distro is Redhat"
-    when: ansible_facts.os_family == "Redhat"
+      msg: "Os distro is RedHat"
+    when: ansible_facts.os_family == "RedHat"
   
   - name: print the Os
     debug:
       msg: "Os distro is ubuntu"
     when: ansible_facts.os_family == "Debian"
+
+
+  # - name: install nginx in RedHat
+  #   dnf:
+  #     name: nginx
+  #     state: present
+  #   when: ansible_facts.os_family == "RedHat"
+
+  # - name: install nginx in ubuntu
+  #   apt:
+  #     name: nginx
+  #     state: present
+  #   when: ansible_facts.os_family == "Debian"
