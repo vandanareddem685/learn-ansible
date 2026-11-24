@@ -3,11 +3,11 @@
   connection: local
   become: yes
   vars:
-  packages:
-  - nginx
-  - mysql
-  - git 
-  - htop
+    packages:
+    - nginx
+    - mysql
+    - git 
+    - htop
   tasks:
   - name: install packages
     package: 
