@@ -1,25 +1,36 @@
 - name: demo on filters
   hosts: local
   connection: local
+
   # tasks:
   # - name: print the name
   #   debug:
   #     msg: "Hi,{{ person_name | default('Ramesh') }}"
+  
+
   # vars:
-  #   topics: "Linux, shell, ansible, terraform, docker"
+  #  topic: "Linux, shell, ansible, terraform, docker"
 
   # tasks:
   # - name: convert string into list
   #   debug:
   #     msg: "topics are: {{ topics | split(',')}}"
+
   
-  vars: 
-   names:
-   - Sivakumar
-   - Reddy
-   - Mettukuru
+  # vars: 
+  #  names:
+  #  - Sivakumar
+  #  - Reddy
+  #  - Mettukuru
   
+  # tasks:
+  # - name: convert list to string
+  #   debug:
+  #     msg: "Fullname is: {{ names | join(' ')}}"
+
+  vars:
+   topic: ansible
   tasks:
-  - name: convert list to string
+  - name: convert to lower
     debug:
-      msg: "Fullname is: {{ names | join(' ')}}"
+      msg: "Tpic is: {{ topic | lower }}"
