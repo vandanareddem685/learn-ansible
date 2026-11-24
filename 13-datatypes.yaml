@@ -18,4 +18,9 @@
   - name: print the info and type
     debug:
       msg: |
-        name: "{{ course }}: {{ course | type_debug }}""
+        name: "{{ course }}: {{ course | type_debug }}"
+        duration: "{{ duration }}:{{ duration_in_hrs | type_debug }}"
+        is_live: "{{ is_live_session }}: {{ is_live_session | type_debug}}"
+        topics are: "{{ topics }}: {{ topics | type_debug }}"
+        more_details: "{{ more_details }}: {{ more_details | type_debug }}"
+        exact_duration: "{{ exact_duration }}: {{ exact_duration type_debug }}"
