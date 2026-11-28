@@ -12,7 +12,8 @@
       msg: "{{ ec2_user_output }}"
 
   - name: test command module
-    command: ls -la > /tmp/file.txt 
+    # command: ls -la > /tmp/file.txt 
+    shell: ls -la > /tmp/file.txt
     register: files_output
 
   - name: print the output
