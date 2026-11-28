@@ -1,7 +1,7 @@
 {
     "firstname":"Vandana",
     "lastName":"Reddem",
-    "DOB":01-01-01,
+    "DOB":"01-01-01",
     "addresses":[
         {
             "type":"permenant",
